@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+</head>
+<body>
+    <h1>Operators</h1>
+
+    <script>
+        // Numbers
+        // +=, -=, /=, *=, ++, --, %
+        // Modulus (%) operator returns the remainder after integer division
+
+        let number = 40;
+        number += 5; // 45
+        number += 5; // 50
+        number += 5; // 55
+        number += 5; // 60
+        number -= 5; // 55
+        number *= 5; // 275
+        number /= 5; // 55
+        number++;    // 56
+        number--;    // 55
+
+        const slices = 10;
+        const customer = 4;
+        const amount = slices % customer;
+
+        const random = 4 + 6 + 10 * 10;
+        const random2 = (4 + 6 + 10) * 10;
+
+        console.log(random); // 110
+        console.log(random2); // 200
+
+        console.log(amount); // 2 
+        // (dividend = divisor * quotient + remainder)
+        // 10 = 4 * 2 + 2;
+    </script>
+    
+</body>
+</html>

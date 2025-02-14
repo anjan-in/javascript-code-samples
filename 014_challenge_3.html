@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+</head>
+<body>
+    <h1>Challenges # 3</h1>
+
+    <script>
+        /*
+        ## Numbers #3
+
+        1. create "score1", "score2", "score3" variables and assign values (0-100).
+        2. calculate total score and average score, and assign them to the variable.
+        3. log total score and average score
+        4. create "plates" variable and assign 20
+        5. create "people" variable and assign 7
+        6. calculate remaining plates and assign to the variable
+        7. add one to remaining plates
+        8. create message variable and display 'There are
+        (your value goes here) plates available' - string concatenation
+        9. log message.
+
+        */
+
+
+        let score1, score2, score3;
+        score1 = 50;
+        score2 = 15;
+        score3 = 7;
+
+        const totalScore = (score1 + score2 + score3);
+        const average = (totalScore) / 3;
+
+        var plates = 20;
+        var people = 7;
+        let remainingPlates = 20 % 7;
+        remainingPlates++;
+
+        const message = 'There are ' + remainingPlates + ' plates available';
+
+        console.log(totalScore);
+        console.log(average);
+        console.log(remainingPlates);
+
+        console.log(message);
+    </script>
+    
+</body>
+</html>

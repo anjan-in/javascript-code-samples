@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions - Expression</title>
+</head>
+<body>
+    <h1>Functions - Expression</h1>
+
+    <script>
+        // Arrays, Functions and objects
+        // expressions - another way define a function
+        // create a variable, assign to FUNCTION (not value), use var
+        // diff - hoisting, use - arrow func, libraries,
+
+        // function definition/declaration
+        function addValues(num1, num2) {
+            return num1 + num2;
+        }
+
+        const firstValue = addValues(1, 2);
+        const secondValue = addValues(12, 15);
+
+        // function expression
+        const add = function (num1, num2) {
+            return num1 + num2;
+        }
+
+        // const thirdValue = add(2, 7);
+        // const values = [firstValue, secondValue, thirdValue];
+        const values = [firstValue, secondValue, add(3, 6)];
+        console.log(values);
+
+        const multiply = (num1, num2) => num1 * num2;
+    </script>
+    
+</body>
+</html>

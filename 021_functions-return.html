@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+    <h1>Functions - Return</h1>
+
+    <script>
+        // Arrays, Functions and Objects
+        // return
+        // default undefined, shortcuts, ignores after
+        // 1 inch 2.54cm
+
+        const wallHeight = 80;
+
+        function calculate(value) {
+            // console.log('There value in cm is: ' + value * 2.54 + 'cm');
+            // const newValue = value * 2.54; // 1st process by making local variable
+            return value * 2.54; // 2nd process directly invoking to the return
+        }
+
+        const width = calculate(100);
+        const height = calculate(wallHeight);
+
+        const dimensions = [width, height];
+        console.log(dimensions);
+    </script>
+</body>
+</html>
